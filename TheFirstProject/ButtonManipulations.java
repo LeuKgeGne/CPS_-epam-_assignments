@@ -1,14 +1,8 @@
 package bsuir.CPS.TheFirstProject;
 
 import javafx.scene.control.Alert;
-import javafx.scene.layout.GridPane;
 
 public class ButtonManipulations {
-    private static final String YEP = "Yep";
-    private static final String NOPE = "Nope";
-    private static final String IF_ERROR = "Wrong input is HERE!";
-    private static final String NOTHING = "";
-
     public static void makeTryCatch(Initialization init) {
         int a, b, c;
         try {
@@ -17,31 +11,23 @@ public class ButtonManipulations {
             c = Integer.parseInt(init.textField3.getText());
 
             if (Manipulations.isEquilateralTriangle(a, b, c)) {
-
-                init.aboveText1.setText(YEP);
+                init.aboveText1.setText(Constants.YEP);
             } else {
-
-                init.aboveText1.setText(NOPE);
+                init.aboveText1.setText(Constants.NOPE);
             }
-
             if (Manipulations.isIsoscelesTriangle(a, b, c)) {
-
-                init.aboveText2.setText(YEP);
+                init.aboveText2.setText(Constants.YEP);
             } else {
-
-                init.aboveText2.setText(NOPE);
+                init.aboveText2.setText(Constants.NOPE);
             }
-
             if (Manipulations.isRightTriangle(a, b, c)) {
-
-                init.aboveText3.setText(YEP);
+                init.aboveText3.setText(Constants.YEP);
             } else {
-
-                init.aboveText3.setText(NOPE);
+                init.aboveText3.setText(Constants.NOPE);
             }
         } catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText(IF_ERROR);
+            alert.setHeaderText(Constants.IF_ERROR);
             alert.show();
         }
     }
@@ -50,9 +36,8 @@ public class ButtonManipulations {
         init.textField1.clear();
         init.textField2.clear();
         init.textField3.clear();
-
-        init.aboveText1.setText(NOTHING);
-        init.aboveText2.setText(NOTHING);
-        init.aboveText3.setText(NOTHING);
+        init.aboveText1.setText(Constants.NOTHING);
+        init.aboveText2.setText(Constants.NOTHING);
+        init.aboveText3.setText(Constants.NOTHING);
     }
 }

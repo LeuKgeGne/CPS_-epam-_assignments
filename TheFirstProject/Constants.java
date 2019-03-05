@@ -1,40 +1,50 @@
 package bsuir.CPS.TheFirstProject;
 
 public class Constants {
-    protected static final byte FIVE = 5;
-    protected static final byte TEN = 10;
-
+    protected static final byte SET_V_GAP = 5;
+    protected static final byte SET_H_GAP = 5;
+    protected static final byte INSETS_TOP = 10;
+    protected static final byte INSETS_RIGHT = 10;
+    protected static final byte INSETS_BOTTOM = 10;
+    protected static final byte INSETS_LEFT = 10;
     protected static final byte TEXT_1_COR_X = 0;
     protected static final byte TEXT_1_COR_Y = 0;
     protected static final byte TEXT_2_COR_X = 0;
     protected static final byte TEXT_2_COR_Y = 1;
     protected static final byte TEXT_3_COR_X = 0;
     protected static final byte TEXT_3_COR_Y = 2;
-
     protected static final byte UNDER_TEXT_1_COR_X = 0;
     protected static final byte UNDER_TEXT_1_COR_Y = 3;
     protected static final byte UNDER_TEXT_2_COR_X = 0;
     protected static final byte UNDER_TEXT_2_COR_Y = 4;
     protected static final byte UNDER_TEXT_3_COR_X = 0;
     protected static final byte UNDER_TEXT_3_COR_Y = 5;
-
     protected static final byte TEXT_FIELD_1_COR_X = 1;
     protected static final byte TEXT_FIELD_1_COR_Y = 0;
     protected static final byte TEXT_FIELD_2_COR_X = 1;
     protected static final byte TEXT_FIELD_2_COR_Y = 1;
     protected static final byte TEXT_FIELD_3_COR_X = 1;
     protected static final byte TEXT_FIELD_3_COR_Y = 2;
-
     protected static final byte MAIN_BUTTON_X = 2;
     protected static final byte MAIN_BUTTON_Y = 5;
-
     protected static final byte CLEAR_BUTTON_X = 2;
     protected static final byte CLEAR_BUTTON_Y = 4;
-
     protected static final byte ABOVE_TEXT__1_COR_X = 1;
     protected static final byte ABOVE_TEXT__1_COR_Y = 3;
     protected static final byte ABOVE_TEXT__2_COR_X = 1;
     protected static final byte ABOVE_TEXT__2_COR_Y = 4;
     protected static final byte ABOVE_TEXT__3_COR_X = 1;
     protected static final byte ABOVE_TEXT__3_COR_Y = 5;
+    protected static final String YEP = "Yep";
+    protected static final String NOPE = "Nope";
+    protected static final String IF_ERROR = "Wrong input is HERE!";
+    protected static final String NOTHING = "";
+    protected static final String MAIN_BUTTON_TEXT = "Check it";
+    protected static final String CLEAR_BUTTON_TEXT = "Clear fields";
+    protected static final String TEXT_1_STRING = "Side 1";
+    protected static final String TEXT_2_STRING = "Side 2";
+    protected static final String TEXT_3_STRING = "Side 3";
+    protected static final String UNDER_TEXT_1_STRING = "Equilateral triangle: ";
+    protected static final String UNDER_TEXT_2_STRING = "Isosceles triangle: ";
+    protected static final String UNDER_TEXT_3_STRING = "Right triangle: ";
 }
