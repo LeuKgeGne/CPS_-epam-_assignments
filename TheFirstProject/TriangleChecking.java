@@ -8,7 +8,6 @@ import javafx.geometry.Insets;
 import javafx.scene.input.MouseEvent;
 import javafx.event.EventHandler;
 
-
 public class TriangleChecking extends Application {
     public static void main(String[] args) {
         launch(args);
