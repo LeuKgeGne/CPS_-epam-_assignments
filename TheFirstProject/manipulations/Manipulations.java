@@ -1,4 +1,4 @@
-package bsuir.CPS.TheFirstProject;
+package bsuir.epam.first_application.manipulations;
 
 public class Manipulations {
     public static boolean isIsoscelesTriangle(int a, int b, int c) {

@@ -1,11 +1,13 @@
-package bsuir.CPS.TheFirstProject;
+package bsuir.epam.first_application.manipulations;
 
+import bsuir.epam.first_application.initialization.Initialization;
+import bsuir.epam.first_application.constants.Constants;
 import javafx.scene.control.Alert;
 
 public class ButtonManipulations {
     public static void makeTryCatch(Initialization init) {
-        int a, b, c;
         try {
+            int a, b, c;
             a = Integer.parseInt(init.textField1.getText());
             b = Integer.parseInt(init.textField2.getText());
             c = Integer.parseInt(init.textField3.getText());
