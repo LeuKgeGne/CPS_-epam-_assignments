@@ -25,6 +25,7 @@ public class Initialization {
     public Button buttonOfSneezing = new Button(Constants.SNEEZE_BTN_TEXT);
     public Button buttonOfScratching = new Button(Constants.SCRATCH_BTN_TEXT);
 
+    //The an image & a path to the image
     public Image image = new Image("file:C:\\Users\\Admin\\IdeaProjects\\brain.jpg",
             Constants.IMAGE_WIDTH, Constants.IMAGE_HEIGHT, true, false);
     public ImageView imageView = new ImageView(image);

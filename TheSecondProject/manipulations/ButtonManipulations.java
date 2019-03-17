@@ -15,9 +15,14 @@ public class ButtonManipulations {
 
     public static void eating(Head head) {
         try {
-            head.getBrain().controlOfOrgan(head, Constants.CHOICE_1);
+            if(head.getOrgans().size() != 0) {
+                head.getBrain().controlOfOrgan(head, Constants.CHOICE_1);
+            }
+            else {
+                throw new NullPointerException();
+            }
         }
-        catch(IndexOutOfBoundsException | NullPointerException ex) {
+        catch(NullPointerException ex) {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle(Constants.EATING_TITLE);
             alert.setHeaderText(Constants.EATING_TXT);
@@ -27,9 +32,14 @@ public class ButtonManipulations {
 
     public static void speaking(Head head) {
         try {
-            head.getBrain().controlOfOrgan(head, Constants.CHOICE_2);
+            if(head.getOrgans().size() != 0) {
+                head.getBrain().controlOfOrgan(head, Constants.CHOICE_2);
+            }
+            else {
+                throw new NullPointerException();
+            }
         }
-        catch(IndexOutOfBoundsException | NullPointerException ex) {
+        catch(NullPointerException ex) {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle(Constants.SPEAKING_TITLE);
             alert.setHeaderText(Constants.SPEAKING_TXT);
@@ -39,9 +49,14 @@ public class ButtonManipulations {
 
     public static void scratching(Head head) {
         try {
-            head.getBrain().controlOfOrgan(head, Constants.CHOICE_3);
+            if(head.getOrgans().size() != 0) {
+                head.getBrain().controlOfOrgan(head, Constants.CHOICE_3);
+            }
+            else {
+                throw new NullPointerException();
+            }
         }
-        catch (IndexOutOfBoundsException | NullPointerException ex){
+        catch (NullPointerException ex){
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle(Constants.SCRATCHING_TITLE);
             alert.setHeaderText(Constants.SCRATCHING_TXT);
@@ -51,9 +66,14 @@ public class ButtonManipulations {
 
     public static void sneezing(Head head) {
         try {
-            head.getBrain().controlOfOrgan(head, Constants.CHOICE_4);;
+            if(head.getOrgans().size() != 0) {
+                head.getBrain().controlOfOrgan(head, Constants.CHOICE_4);
+            }
+            else {
+                throw new NullPointerException();
+            }
         }
-        catch (IndexOutOfBoundsException | NullPointerException ex){
+        catch (NullPointerException ex){
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle(Constants.SNEEZING_TITLE);
             alert.setHeaderText(Constants.SNEEZING_TXT);

@@ -4,10 +4,14 @@ import epam.bsuir.oop.start.Constants;
 import java.util.ArrayList;
 
 public class Head {
-    private ArrayList<Organ> organs = new ArrayList<>(3);
+    private ArrayList<Organ> organs = new ArrayList<Organ>(3);
 
     public void setOrgans(Organ organ) {
         organs.add(organ);
+    }
+
+    public ArrayList<Organ> getOrgans() {
+        return this.organs;
     }
 
     public Brain getBrain() {

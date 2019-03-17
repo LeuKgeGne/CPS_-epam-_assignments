@@ -14,6 +14,9 @@ public class MyTinyFactory {
         head.setOrgans(createANose(new Nose()));
     }
 
+    //I didn't make any constants for these methods, cause
+    //in my opinion it's not too much important here, just
+    //my thoughts,however you're able to change my mind ;)
     public static Brain createABrain(Brain brain) {
         brain.setWeightOfOrgan(500 + random(1500 - 500));
         brain.setEfficientFactor(5 + random(100 - 5));

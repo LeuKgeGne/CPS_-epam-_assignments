@@ -3,6 +3,7 @@ package epam.bsuir.oop.start;
 public final class Constants {
     private Constants(){}
 
+    //first steps
     public static final byte INSETS_TOP = 10;
     public static final byte INSETS_RIGHT = 10;
     public static final byte INSETS_BOTTOM = 10;
@@ -31,6 +32,7 @@ public final class Constants {
     public static final byte MOUTH_POS_IN_ARR = 1;
     public static final byte NOSE_POS_IN_ARR = 2;
 
+    //application's size and button's names
     public static final int APPLICATION_WIDTH = 300;
     public static final int APPLICATION_HEIGHT = 250;
     public static final int IMAGE_WIDTH = 200;
